@@ -5,8 +5,8 @@ import Para from './Para';
 import Order from './order';
 ReactDOM.render(
 <>
-
-<Heading/>
+{/* <Heading/> */}
+<Heading></Heading>
 <Para/>
 <Order/>
 </>,

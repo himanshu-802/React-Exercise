@@ -1,17 +1,59 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Heading from './Heading';
-import Para from './Para';
-import Order from './order';
+import Card from './Cards';
+import './index.css';
+import Sdata from './Sdata';
 ReactDOM.render(
-<>
+    <>
+    <h1 className="heading_style">List of top 5 Netflix Series in 2020</h1>
+    <Card
+    imgsrc={Sdata[0].imgscr}
+    title={Sdata[0].title}
+    sname={Sdata[0].sname}
+    link={Sdata[0].link}
+    />
+    <Card
+    className="kuchbhi"
+    imgsrc={Sdata[1].imgscr}
+    title={Sdata[1].title}
+    sname={Sdata[1].sname}
+    link={Sdata[1].link}
+    />
+    <Card
+    imgsrc={Sdata[2].imgscr}
+    title={Sdata[2].title}
+    sname={Sdata[2].sname}
+    link={Sdata[2].link}
+    />
+    </>,
+    document.getElementById("root")
+)
 
-<Heading/>
-<Para/>
-<Order/>
-</>,
-document.getElementById("root")
-);
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from "./App";
+// ReactDOM.render(
+//   <>
+//   {<App/>}
+//   </>,
+//   document.getElementById("root")
+
+// );
+
+
+
+
+
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import App from './App';
+
+// ReactDOM.render(
+// <>
+// <App/>
+// </>,
+// document.getElementById("root")
+// );
 
 
 

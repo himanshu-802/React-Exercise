@@ -3,7 +3,8 @@ import ReactDOM from 'react-dom';
 import Card from './Cards';
 import './index.css';
 import Sdata from './Sdata';
-
+import Logo from './logo';
+import App from './App';
 // function ncard(val, ind, arr) {
 //     return (
 //         <Card
@@ -13,37 +14,19 @@ import Sdata from './Sdata';
 //             link={val.link}
 //         />
 //     );
+// // }
+// const ncard=(val,ind,arr)=>{
+//     return(
+//         <Card
+//             key={val.id}
+//             imgsrc={val.imgscr}
+//             title={val.title}
+//             sname={val.sname}
+//             link={val.link}
+//         />
+//     );
 // }
-const ncard=(val,ind,arr)=>{
-    return(
-        <Card
-            imgsrc={val.imgscr}
-            title={val.title}
-            sname={val.sname}
-            link={val.link}
-        />
-    );
-}
-ReactDOM.render(
-    <>
-        <h1 className="heading_style">List of top 5 Netflix Series in 2020</h1>
-        {Sdata.map(ncard)} 
-        {/* Can comment the above */}
-        { Sdata.map( (val, index) => {
-
-            console.log('this is index number ' + index);
-            return(                
-                <Card
-            imgsrc={val.imgscr}
-            title={val.title}
-            sname={val.sname}
-            link={val.link}
-        />
-
-            );
-        })}
-    </>,
-    document.getElementById("root")
+ReactDOM.render( <App/> ,document.getElementById("root")
 )
 
 
